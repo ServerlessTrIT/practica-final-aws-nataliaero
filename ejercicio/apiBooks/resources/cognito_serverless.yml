@@ -1,0 +1,39 @@
+Resources:
+  MyCognitoPool:
+    Type: AWS::Cognito::UserPool
+    Properties:
+      UserPoolName: MyCognitoPool-${self:provider.stage}
+      Policies:
+        PasswordPolicy:
+          MinimumLength: 8
+          RequireLowercase: true
+          RequireNumbers: true
+          RequireSymbols: true
+          RequireUppercase: true
+          TemporaryPasswordValidityDays: 15
+      UsernameAttributes:
+        - email
+      AutoVerifiedAttributes:
+        - email
+      EmailVerificationMessage: "Tu código de verificación es {####}"
+      EmailVerificationSubject: "Tu código para MiApp"
+      MfaConfiguration: OFF
+      UserPoolTags:
+        Env: ${self:provider.stage}
+      AdminCreateUserConfig:
+        AllowAdminCreateUserOnly: false
+        InviteMessageTemplate:
+          EmailMessage: "Esta es tu contraseña para tu cuenta {username} en MiApp: {####}"
+          EmailSubject: "Tu cuenta para MiApp"
+      UsernameConfiguration:
+        CaseSensitive: false
+
+  MyCognitoPoolClient:
+    Type: AWS::Cognito::UserPoolClient
+    Properties:
+      ClientName: MyCognitoPoolClient-${self:provider.stage}
+      ExplicitAuthFlows:
+        - USER_PASSWORD_AUTH
+      RefreshTokenValidity: 30
+      UserPoolId:
+        Ref: MyCognitoPool

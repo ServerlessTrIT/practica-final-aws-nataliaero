@@ -1,0 +1,113 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: apiBooks
+frameworkVersion: "2"
+
+provider:
+  name: aws
+  runtime: python3.8
+  lambdaHashingVersion: 20201221
+  stage: ${opt:stage, 'dev'}
+  region: eu-central-1
+  environment:
+    CLIENT_ID:
+      Ref: MyCognitoPoolClient
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource: !GetAtt BooksTable.Arn
+
+  endpointType: REGIONAL
+  apiName: apiBooks-${self:provider.stage}
+  apiKeys:
+    - apiKeyBooks-${self:provider.stage}
+  usagePlan:
+    quota:
+      limit: 1000
+      offset: 0
+      period: DAY
+    throttle:
+      burstLimit: 200
+      rateLimit: 100
+
+functions:
+  read:
+    handler: books/read.handler
+    events:
+      - http:
+          path: books
+          method: get
+          private: true
+          authorizer:
+            type: COGNITO_USER_POOLS
+            authorizerId: !Ref MyAuthorizer
+      - http:
+          path: books/{id}
+          method: get
+          private: true
+          authorizer:
+            type: COGNITO_USER_POOLS
+            authorizerId: !Ref MyAuthorizer
+  create:
+    handler: books/create.handler
+    events:
+      - http:
+          path: books
+          method: post
+          private: true
+          authorizer:
+            type: COGNITO_USER_POOLS
+            authorizerId: !Ref MyAuthorizer
+  delete:
+    handler: books/delete.handler
+    events:
+      - http:
+          path: books
+          method: delete
+          private: true
+          authorizer:
+            type: COGNITO_USER_POOLS
+            authorizerId: !Ref MyAuthorizer
+  login:
+    handler: users/login.handler
+    events:
+      - http:
+          path: login
+          method: post
+          private: true
+  signup:
+    handler: users/signup.handler
+    events:
+      - http:
+          path: signup
+          method: post
+          private: true
+  confirmsignup:
+    handler: users/confirmsignup.handler
+    events:
+      - http:
+          path: confirmsignup
+          method: post
+          private: true
+
+resources:
+  - ${file(resources/dynamodb_serverless.yml)}
+  - ${file(resources/cognito_serverless.yml)}
+  - ${file(resources/apigateway_serverless.yml)}

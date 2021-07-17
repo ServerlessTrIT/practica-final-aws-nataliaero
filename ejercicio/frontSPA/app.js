@@ -74,6 +74,8 @@ function login(event) {
     dataType: "application/json",
     headers: {
       "x-api-key": API_KEY,
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Credentials": true,
     },
     data: JSON.stringify({
       username: $("input[id='username']").val(),
@@ -86,7 +88,6 @@ function login(event) {
     })
     .fail(function (error) {
       //$("div[id='msg']").text(JSON.parse(error.responseText).message);
-      console.log("error ", error);
       $("div[id='msg']").text(
         `Credenciales incorrectas: "${JSON.stringify(error)}`
       );

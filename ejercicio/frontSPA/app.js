@@ -75,7 +75,6 @@ function login(event) {
     headers: {
       "x-api-key": API_KEY,
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Credentials": true,
     },
     data: JSON.stringify({
       username: $("input[id='username']").val(),

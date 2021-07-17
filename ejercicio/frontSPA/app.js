@@ -71,7 +71,7 @@ function login(event) {
   $.ajax({
     url: API_LOGIN,
     method: "POST",
-    dataType: "json",
+    dataType: "application/json",
     headers: {
       "x-api-key": API_KEY,
     },
@@ -86,7 +86,10 @@ function login(event) {
     })
     .fail(function (error) {
       //$("div[id='msg']").text(JSON.parse(error.responseText).message);
-      $("div[id='msg']").text("Credenciales incorrectas");
+      console.log("error ", error);
+      $("div[id='msg']").text(
+        `Credenciales incorrectas: "${JSON.stringify(error)}`
+      );
     });
 
   return false;
@@ -179,18 +182,18 @@ function deleteBook(event) {
 ************************************/
 function loginPage() {
   content =
-    '<h1>Login</h1><br/><div id="msg"></div><br/><form id="formLogin"><input type="text" name="username" placeholder="E-mail" id="username"><input type="password" name="password" id="password" placeholder="Contraseña"><button type="submit" value="Enviar" id="btnLogin">Enviar</button></form>';
+    '<h1>Login: </h1><br/><div id="msg"></div><br/><form id="formLogin"><input type="text" name="username" placeholder="E-mail" id="username"><input type="password" name="password" id="password" placeholder="Contraseña"><button type="submit" value="Enviar" id="btnLogin">Enviar</button></form>';
   return content;
 }
 
 function signupPage() {
   content =
-    '<h1>Registro</h1><br/><div id="msg"></div><br/><form id="formSignup"><input type="text" name="username" placeholder="E-mail" id="username"><input type="password" name="password" id="password" placeholder="Contraseña"><button type="submit" id="btnSignup">Enviar</button></form>';
+    '<h1>Registro: </h1><br/><div id="msg"></div><br/><form id="formSignup"><input type="text" name="username" placeholder="E-mail" id="username"><input type="password" name="password" id="password" placeholder="Contraseña"><button type="submit" id="btnSignup">Enviar</button></form>';
   return content;
 }
 function confirmSignupPage() {
   content =
-    '<h1>Confirmar e-mail</h1><br/><div id="msg"></div><br/><form id="formConfirmSignup"><input type="text" name="username" placeholder="E-mail" id="username"><input type="text" name="code" id="code" placeholder="Código"><button type="submit"  id="btnConfirmSignup">Enviar</button></form>';
+    '<h1>Confirmar e-mail: </h1><br/><div id="msg"></div><br/><form id="formConfirmSignup"><input type="text" name="username" placeholder="E-mail" id="username"><input type="text" name="code" id="code" placeholder="Código"><button type="submit"  id="btnConfirmSignup">Enviar</button></form>';
   return content;
 }
 

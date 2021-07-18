@@ -22,6 +22,8 @@ function signup(event) {
     dataType: "json",
     headers: {
       "x-api-key": API_KEY,
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Credentials": true,
     },
     data: JSON.stringify({
       username: $("input[id='username']").val(),
@@ -48,6 +50,8 @@ function confirmSignup() {
     dataType: "json",
     headers: {
       "x-api-key": API_KEY,
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Credentials": true,
     },
     data: JSON.stringify({
       username: $("input[id='username']").val(),
@@ -75,6 +79,7 @@ function login(event) {
     headers: {
       "x-api-key": API_KEY,
       "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Credentials": true,
     },
     data: JSON.stringify({
       username: $("input[id='username']").val(),
@@ -106,6 +111,8 @@ function getBooks() {
     method: "GET",
     headers: {
       "x-api-key": API_KEY,
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Credentials": true,
       Authorization: "Bearer " + localStorage.getItem("token"),
     },
   })
@@ -131,6 +138,8 @@ function putBook() {
     method: "POST",
     headers: {
       "x-api-key": API_KEY,
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Credentials": true,
       Authorization: "Bearer " + localStorage.getItem("token"),
     },
     data: JSON.stringify({
@@ -160,6 +169,8 @@ function deleteBook(event) {
     method: "DELETE",
     headers: {
       "x-api-key": API_KEY,
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Credentials": true,
       Authorization: "Bearer " + localStorage.getItem("token"),
     },
     data: JSON.stringify({

@@ -54,6 +54,7 @@ functions:
       - http:
           path: books
           method: get
+          cors: true
           private: true
           authorizer:
             type: COGNITO_USER_POOLS
@@ -61,6 +62,7 @@ functions:
       - http:
           path: books/{id}
           method: get
+          cors: true
           private: true
           authorizer:
             type: COGNITO_USER_POOLS
@@ -71,6 +73,7 @@ functions:
       - http:
           path: books
           method: post
+          cors: true
           private: true
           authorizer:
             type: COGNITO_USER_POOLS
@@ -81,6 +84,7 @@ functions:
       - http:
           path: books
           method: delete
+          cors: true
           private: true
           authorizer:
             type: COGNITO_USER_POOLS
@@ -91,6 +95,7 @@ functions:
       - http:
           path: login
           method: post
+          cors: true
           private: true
   signup:
     handler: users/signup.handler
@@ -98,6 +103,7 @@ functions:
       - http:
           path: signup
           method: post
+          cors: true
           private: true
   confirmsignup:
     handler: users/confirmsignup.handler
@@ -105,6 +111,7 @@ functions:
       - http:
           path: confirmsignup
           method: post
+          cors: true
           private: true
 
 resources:

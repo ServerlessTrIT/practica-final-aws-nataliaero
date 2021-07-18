@@ -208,7 +208,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/apiBooks/dev/1626442679232-2021-07-16T13:37:59.232Z/apiBooks.zip"
+          "S3Key": "serverless/apiBooks/dev/1626594811354-2021-07-18T07:53:31.354Z/apiBooks.zip"
         },
         "Handler": "books/read.handler",
         "Runtime": "python3.8",
@@ -240,7 +240,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/apiBooks/dev/1626442679232-2021-07-16T13:37:59.232Z/apiBooks.zip"
+          "S3Key": "serverless/apiBooks/dev/1626594811354-2021-07-18T07:53:31.354Z/apiBooks.zip"
         },
         "Handler": "books/create.handler",
         "Runtime": "python3.8",
@@ -272,7 +272,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/apiBooks/dev/1626442679232-2021-07-16T13:37:59.232Z/apiBooks.zip"
+          "S3Key": "serverless/apiBooks/dev/1626594811354-2021-07-18T07:53:31.354Z/apiBooks.zip"
         },
         "Handler": "books/delete.handler",
         "Runtime": "python3.8",
@@ -304,7 +304,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/apiBooks/dev/1626442679232-2021-07-16T13:37:59.232Z/apiBooks.zip"
+          "S3Key": "serverless/apiBooks/dev/1626594811354-2021-07-18T07:53:31.354Z/apiBooks.zip"
         },
         "Handler": "users/login.handler",
         "Runtime": "python3.8",
@@ -336,7 +336,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/apiBooks/dev/1626442679232-2021-07-16T13:37:59.232Z/apiBooks.zip"
+          "S3Key": "serverless/apiBooks/dev/1626594811354-2021-07-18T07:53:31.354Z/apiBooks.zip"
         },
         "Handler": "users/signup.handler",
         "Runtime": "python3.8",
@@ -368,7 +368,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/apiBooks/dev/1626442679232-2021-07-16T13:37:59.232Z/apiBooks.zip"
+          "S3Key": "serverless/apiBooks/dev/1626594811354-2021-07-18T07:53:31.354Z/apiBooks.zip"
         },
         "Handler": "users/confirmsignup.handler",
         "Runtime": "python3.8",
@@ -393,64 +393,64 @@
         "ConfirmsignupLogGroup"
       ]
     },
-    "ReadLambdaVersion0Rm9Up8O5KCO8GjpTPtnnjiU8hnEloGSHAOMfjRoI8": {
+    "ReadLambdaVersionRiiuGzurvWOIKqAHd5m93Ql3QP9eNLaIRYWY6e2g568": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ReadLambdaFunction"
         },
-        "CodeSha256": "rMnH6NNGeycFi1JFgkkOvYE9eD6h7APDkFVYt2zNhxw="
+        "CodeSha256": "moohCxg8xWkNPD7jiY023rzBAdfFt5itVP2+INij6M0="
       }
     },
-    "CreateLambdaVersionFixTJT6SsUN2fsKTVWMC0Z1XqmGeH1G63BO7fGzBk": {
+    "CreateLambdaVersiondQAyOKMkRxUNSceF8pKldAlbRJ5c1VXVdZeLo6qMA3c": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateLambdaFunction"
         },
-        "CodeSha256": "rMnH6NNGeycFi1JFgkkOvYE9eD6h7APDkFVYt2zNhxw="
+        "CodeSha256": "moohCxg8xWkNPD7jiY023rzBAdfFt5itVP2+INij6M0="
       }
     },
-    "DeleteLambdaVersionP6eB71vyXweIx1tOEI1XKc6g5ZENAOnMizaoMzgPww": {
+    "DeleteLambdaVersionMFGwWdXng0Ji4aV43x8P8rv2jLJ8tjQWXd6MBmaaqg": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteLambdaFunction"
         },
-        "CodeSha256": "rMnH6NNGeycFi1JFgkkOvYE9eD6h7APDkFVYt2zNhxw="
+        "CodeSha256": "moohCxg8xWkNPD7jiY023rzBAdfFt5itVP2+INij6M0="
       }
     },
-    "LoginLambdaVersionm3kpOmqFfOF7F18FrpqQBKwgAMsaqNedaq4d61JBzg": {
+    "LoginLambdaVersionvvYwi1U5xc9AbbTaufkkFz4U667PUUbfpZemiV4C5s": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LoginLambdaFunction"
         },
-        "CodeSha256": "rMnH6NNGeycFi1JFgkkOvYE9eD6h7APDkFVYt2zNhxw="
+        "CodeSha256": "moohCxg8xWkNPD7jiY023rzBAdfFt5itVP2+INij6M0="
       }
     },
-    "SignupLambdaVersionLPUFUHn9d9GvV81GeeShrvp1X5GzgJSDvcpKGdkMWA": {
+    "SignupLambdaVersionRokekPfciKFlJQd9fg3Q9yC5EMgRUmBsmgVxdHmac": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SignupLambdaFunction"
         },
-        "CodeSha256": "rMnH6NNGeycFi1JFgkkOvYE9eD6h7APDkFVYt2zNhxw="
+        "CodeSha256": "moohCxg8xWkNPD7jiY023rzBAdfFt5itVP2+INij6M0="
       }
     },
-    "ConfirmsignupLambdaVersionARVYIK2FP394WT1Lkt0YT00pmf1zsROIcfqhtPlzPs": {
+    "ConfirmsignupLambdaVersionSbbzqdw3XSpY6h8x4VvLeaL2tOqPXPFXvnyPTtRlzFI": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ConfirmsignupLambdaFunction"
         },
-        "CodeSha256": "rMnH6NNGeycFi1JFgkkOvYE9eD6h7APDkFVYt2zNhxw="
+        "CodeSha256": "moohCxg8xWkNPD7jiY023rzBAdfFt5itVP2+INij6M0="
       }
     },
     "ApiGatewayRestApi": {
@@ -532,6 +532,231 @@
           ]
         },
         "PathPart": "confirmsignup",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodBooksOptions": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true
+            },
+            "ResponseModels": {}
+          }
+        ],
+        "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "ContentHandling": "CONVERT_TO_TEXT",
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,DELETE,POST,GET'"
+              },
+              "ResponseTemplates": {
+                "application/json": "#set($origin = $input.params(\"Origin\"))\n#if($origin == \"\") #set($origin = $input.params(\"origin\")) #end\n#if($origin.matches(\".+\")) #set($context.responseOverride.header.Access-Control-Allow-Origin = $origin) #end"
+              }
+            }
+          ]
+        },
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceBooks"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodBooksIdVarOptions": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true
+            },
+            "ResponseModels": {}
+          }
+        ],
+        "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "ContentHandling": "CONVERT_TO_TEXT",
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,GET'"
+              },
+              "ResponseTemplates": {
+                "application/json": "#set($origin = $input.params(\"Origin\"))\n#if($origin == \"\") #set($origin = $input.params(\"origin\")) #end\n#if($origin.matches(\".+\")) #set($context.responseOverride.header.Access-Control-Allow-Origin = $origin) #end"
+              }
+            }
+          ]
+        },
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceBooksIdVar"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodLoginOptions": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true
+            },
+            "ResponseModels": {}
+          }
+        ],
+        "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "ContentHandling": "CONVERT_TO_TEXT",
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,POST'"
+              },
+              "ResponseTemplates": {
+                "application/json": "#set($origin = $input.params(\"Origin\"))\n#if($origin == \"\") #set($origin = $input.params(\"origin\")) #end\n#if($origin.matches(\".+\")) #set($context.responseOverride.header.Access-Control-Allow-Origin = $origin) #end"
+              }
+            }
+          ]
+        },
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceLogin"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodSignupOptions": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true
+            },
+            "ResponseModels": {}
+          }
+        ],
+        "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "ContentHandling": "CONVERT_TO_TEXT",
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,POST'"
+              },
+              "ResponseTemplates": {
+                "application/json": "#set($origin = $input.params(\"Origin\"))\n#if($origin == \"\") #set($origin = $input.params(\"origin\")) #end\n#if($origin.matches(\".+\")) #set($context.responseOverride.header.Access-Control-Allow-Origin = $origin) #end"
+              }
+            }
+          ]
+        },
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceSignup"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodConfirmsignupOptions": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true
+            },
+            "ResponseModels": {}
+          }
+        ],
+        "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "ContentHandling": "CONVERT_TO_TEXT",
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,POST'"
+              },
+              "ResponseTemplates": {
+                "application/json": "#set($origin = $input.params(\"Origin\"))\n#if($origin == \"\") #set($origin = $input.params(\"origin\")) #end\n#if($origin.matches(\".+\")) #set($context.responseOverride.header.Access-Control-Allow-Origin = $origin) #end"
+              }
+            }
+          ]
+        },
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceConfirmsignup"
+        },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
@@ -871,7 +1096,7 @@
         "ConfirmsignupLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1626442678522": {
+    "ApiGatewayDeployment1626594810673": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -880,6 +1105,11 @@
         "StageName": "dev"
       },
       "DependsOn": [
+        "ApiGatewayMethodBooksOptions",
+        "ApiGatewayMethodBooksIdVarOptions",
+        "ApiGatewayMethodLoginOptions",
+        "ApiGatewayMethodSignupOptions",
+        "ApiGatewayMethodConfirmsignupOptions",
         "ApiGatewayMethodBooksGet",
         "ApiGatewayMethodBooksIdVarGet",
         "ApiGatewayMethodBooksPost",
@@ -903,11 +1133,11 @@
           }
         ]
       },
-      "DependsOn": "ApiGatewayDeployment1626442678522"
+      "DependsOn": "ApiGatewayDeployment1626594810673"
     },
     "ApiGatewayUsagePlan": {
       "Type": "AWS::ApiGateway::UsagePlan",
-      "DependsOn": "ApiGatewayDeployment1626442678522",
+      "DependsOn": "ApiGatewayDeployment1626594810673",
       "Properties": {
         "ApiStages": [
           {
@@ -1255,6 +1485,19 @@
         ],
         "IdentitySource": "method.request.header.Authorization"
       }
+    },
+    "GatewayResponseDefault4XX": {
+      "Type": "AWS::ApiGateway::GatewayResponse",
+      "Properties": {
+        "ResponseParameters": {
+          "gatewayresponse.header.Access-Control-Allow-Origin": "'*'",
+          "gatewayresponse.header.Access-Control-Allow-Headers": "'*'"
+        },
+        "ResponseType": "DEFAULT_4XX",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
     }
   },
   "Outputs": {
@@ -1269,7 +1512,7 @@
     "ReadLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ReadLambdaVersion0Rm9Up8O5KCO8GjpTPtnnjiU8hnEloGSHAOMfjRoI8"
+        "Ref": "ReadLambdaVersionRiiuGzurvWOIKqAHd5m93Ql3QP9eNLaIRYWY6e2g568"
       },
       "Export": {
         "Name": "sls-apiBooks-dev-ReadLambdaFunctionQualifiedArn"
@@ -1278,7 +1521,7 @@
     "CreateLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateLambdaVersionFixTJT6SsUN2fsKTVWMC0Z1XqmGeH1G63BO7fGzBk"
+        "Ref": "CreateLambdaVersiondQAyOKMkRxUNSceF8pKldAlbRJ5c1VXVdZeLo6qMA3c"
       },
       "Export": {
         "Name": "sls-apiBooks-dev-CreateLambdaFunctionQualifiedArn"
@@ -1287,7 +1530,7 @@
     "DeleteLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteLambdaVersionP6eB71vyXweIx1tOEI1XKc6g5ZENAOnMizaoMzgPww"
+        "Ref": "DeleteLambdaVersionMFGwWdXng0Ji4aV43x8P8rv2jLJ8tjQWXd6MBmaaqg"
       },
       "Export": {
         "Name": "sls-apiBooks-dev-DeleteLambdaFunctionQualifiedArn"
@@ -1296,7 +1539,7 @@
     "LoginLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoginLambdaVersionm3kpOmqFfOF7F18FrpqQBKwgAMsaqNedaq4d61JBzg"
+        "Ref": "LoginLambdaVersionvvYwi1U5xc9AbbTaufkkFz4U667PUUbfpZemiV4C5s"
       },
       "Export": {
         "Name": "sls-apiBooks-dev-LoginLambdaFunctionQualifiedArn"
@@ -1305,7 +1548,7 @@
     "SignupLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SignupLambdaVersionLPUFUHn9d9GvV81GeeShrvp1X5GzgJSDvcpKGdkMWA"
+        "Ref": "SignupLambdaVersionRokekPfciKFlJQd9fg3Q9yC5EMgRUmBsmgVxdHmac"
       },
       "Export": {
         "Name": "sls-apiBooks-dev-SignupLambdaFunctionQualifiedArn"
@@ -1314,7 +1557,7 @@
     "ConfirmsignupLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ConfirmsignupLambdaVersionARVYIK2FP394WT1Lkt0YT00pmf1zsROIcfqhtPlzPs"
+        "Ref": "ConfirmsignupLambdaVersionSbbzqdw3XSpY6h8x4VvLeaL2tOqPXPFXvnyPTtRlzFI"
       },
       "Export": {
         "Name": "sls-apiBooks-dev-ConfirmsignupLambdaFunctionQualifiedArn"

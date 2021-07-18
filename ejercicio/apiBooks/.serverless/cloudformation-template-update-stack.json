@@ -208,7 +208,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/apiBooks/dev/1626602172129-2021-07-18T09:56:12.129Z/apiBooks.zip"
+          "S3Key": "serverless/apiBooks/dev/1626602526186-2021-07-18T10:02:06.186Z/apiBooks.zip"
         },
         "Handler": "books/read.handler",
         "Runtime": "python3.8",
@@ -240,7 +240,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/apiBooks/dev/1626602172129-2021-07-18T09:56:12.129Z/apiBooks.zip"
+          "S3Key": "serverless/apiBooks/dev/1626602526186-2021-07-18T10:02:06.186Z/apiBooks.zip"
         },
         "Handler": "books/create.handler",
         "Runtime": "python3.8",
@@ -272,7 +272,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/apiBooks/dev/1626602172129-2021-07-18T09:56:12.129Z/apiBooks.zip"
+          "S3Key": "serverless/apiBooks/dev/1626602526186-2021-07-18T10:02:06.186Z/apiBooks.zip"
         },
         "Handler": "books/delete.handler",
         "Runtime": "python3.8",
@@ -304,7 +304,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/apiBooks/dev/1626602172129-2021-07-18T09:56:12.129Z/apiBooks.zip"
+          "S3Key": "serverless/apiBooks/dev/1626602526186-2021-07-18T10:02:06.186Z/apiBooks.zip"
         },
         "Handler": "users/login.handler",
         "Runtime": "python3.8",
@@ -336,7 +336,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/apiBooks/dev/1626602172129-2021-07-18T09:56:12.129Z/apiBooks.zip"
+          "S3Key": "serverless/apiBooks/dev/1626602526186-2021-07-18T10:02:06.186Z/apiBooks.zip"
         },
         "Handler": "users/signup.handler",
         "Runtime": "python3.8",
@@ -368,7 +368,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/apiBooks/dev/1626602172129-2021-07-18T09:56:12.129Z/apiBooks.zip"
+          "S3Key": "serverless/apiBooks/dev/1626602526186-2021-07-18T10:02:06.186Z/apiBooks.zip"
         },
         "Handler": "users/confirmsignup.handler",
         "Runtime": "python3.8",
@@ -393,64 +393,64 @@
         "ConfirmsignupLogGroup"
       ]
     },
-    "ReadLambdaVersionb9gXTNC39GXXhCvmD9aorL5yO3lbj2zW4RHI3GLxc": {
+    "ReadLambdaVersion9FEDP8fnGVACEZ5g7DPwMIvwVvAa0AUPOE5opXFCQO8": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ReadLambdaFunction"
         },
-        "CodeSha256": "e/iRIM+n4BAf6rXUnq+NTVV8HDjkD0OUFinuksZvNao="
+        "CodeSha256": "pqiYrjzFJcbddXgSPV7lhreoDq2L1UyERIMOe/Uw1ns="
       }
     },
-    "CreateLambdaVersionOkmPu7jk9Ci5RbBYx54yBMhNXU4ItLWK6EQ5GsBeo": {
+    "CreateLambdaVersionYkYzwKdLFoB3IxM5aPmxYJVvC9LHAHvF7dAWV81Yog": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateLambdaFunction"
         },
-        "CodeSha256": "e/iRIM+n4BAf6rXUnq+NTVV8HDjkD0OUFinuksZvNao="
+        "CodeSha256": "pqiYrjzFJcbddXgSPV7lhreoDq2L1UyERIMOe/Uw1ns="
       }
     },
-    "DeleteLambdaVersionPfNhgXuZfcZdidwIOAiMHUtV6HSmypirLvk0uf4ta8": {
+    "DeleteLambdaVersionvSUEdawkUeDmKzfbpYdjE7zyWZjEwRmNnEAPSNFFg": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteLambdaFunction"
         },
-        "CodeSha256": "e/iRIM+n4BAf6rXUnq+NTVV8HDjkD0OUFinuksZvNao="
+        "CodeSha256": "pqiYrjzFJcbddXgSPV7lhreoDq2L1UyERIMOe/Uw1ns="
       }
     },
-    "LoginLambdaVersionHzeJq2TYIoJC8Mln7xdSpR2HLspCJcHDvwJESVqKQ": {
+    "LoginLambdaVersionQIoyKHJyQAIHmOAOQzhVjcRhPwXclTA2WOPoI7KYE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LoginLambdaFunction"
         },
-        "CodeSha256": "e/iRIM+n4BAf6rXUnq+NTVV8HDjkD0OUFinuksZvNao="
+        "CodeSha256": "pqiYrjzFJcbddXgSPV7lhreoDq2L1UyERIMOe/Uw1ns="
       }
     },
-    "SignupLambdaVersionS2XHAUz9W0T67EqBV8dMDYhp5qenFejrkgI9dA2NQ": {
+    "SignupLambdaVersionMqmPV3u22dv3Mmfl8Yxif9eBOp1UPHgRkWPXTlceiU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SignupLambdaFunction"
         },
-        "CodeSha256": "e/iRIM+n4BAf6rXUnq+NTVV8HDjkD0OUFinuksZvNao="
+        "CodeSha256": "pqiYrjzFJcbddXgSPV7lhreoDq2L1UyERIMOe/Uw1ns="
       }
     },
-    "ConfirmsignupLambdaVersion8ttmwrVuWsjJaFsP4uIfEDC7LHvlxUTRqWbcslElkg": {
+    "ConfirmsignupLambdaVersionureBB6uP4pNYGEcMI1fWZrlfGw3PQaanfnEacN17HaY": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ConfirmsignupLambdaFunction"
         },
-        "CodeSha256": "e/iRIM+n4BAf6rXUnq+NTVV8HDjkD0OUFinuksZvNao="
+        "CodeSha256": "pqiYrjzFJcbddXgSPV7lhreoDq2L1UyERIMOe/Uw1ns="
       }
     },
     "ApiGatewayRestApi": {
@@ -1096,7 +1096,7 @@
         "ConfirmsignupLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1626602171404": {
+    "ApiGatewayDeployment1626602525330": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -1133,11 +1133,11 @@
           }
         ]
       },
-      "DependsOn": "ApiGatewayDeployment1626602171404"
+      "DependsOn": "ApiGatewayDeployment1626602525330"
     },
     "ApiGatewayUsagePlan": {
       "Type": "AWS::ApiGateway::UsagePlan",
-      "DependsOn": "ApiGatewayDeployment1626602171404",
+      "DependsOn": "ApiGatewayDeployment1626602525330",
       "Properties": {
         "ApiStages": [
           {
@@ -1506,7 +1506,7 @@
           "gatewayresponse.header.Access-Control-Allow-Origin": "'*'",
           "gatewayresponse.header.Access-Control-Allow-Headers": "'*'"
         },
-        "ResponseType": "DEFAULT_4XX",
+        "ResponseType": "DEFAULT_5XX",
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
@@ -1525,7 +1525,7 @@
     "ReadLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ReadLambdaVersionb9gXTNC39GXXhCvmD9aorL5yO3lbj2zW4RHI3GLxc"
+        "Ref": "ReadLambdaVersion9FEDP8fnGVACEZ5g7DPwMIvwVvAa0AUPOE5opXFCQO8"
       },
       "Export": {
         "Name": "sls-apiBooks-dev-ReadLambdaFunctionQualifiedArn"
@@ -1534,7 +1534,7 @@
     "CreateLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateLambdaVersionOkmPu7jk9Ci5RbBYx54yBMhNXU4ItLWK6EQ5GsBeo"
+        "Ref": "CreateLambdaVersionYkYzwKdLFoB3IxM5aPmxYJVvC9LHAHvF7dAWV81Yog"
       },
       "Export": {
         "Name": "sls-apiBooks-dev-CreateLambdaFunctionQualifiedArn"
@@ -1543,7 +1543,7 @@
     "DeleteLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteLambdaVersionPfNhgXuZfcZdidwIOAiMHUtV6HSmypirLvk0uf4ta8"
+        "Ref": "DeleteLambdaVersionvSUEdawkUeDmKzfbpYdjE7zyWZjEwRmNnEAPSNFFg"
       },
       "Export": {
         "Name": "sls-apiBooks-dev-DeleteLambdaFunctionQualifiedArn"
@@ -1552,7 +1552,7 @@
     "LoginLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoginLambdaVersionHzeJq2TYIoJC8Mln7xdSpR2HLspCJcHDvwJESVqKQ"
+        "Ref": "LoginLambdaVersionQIoyKHJyQAIHmOAOQzhVjcRhPwXclTA2WOPoI7KYE"
       },
       "Export": {
         "Name": "sls-apiBooks-dev-LoginLambdaFunctionQualifiedArn"
@@ -1561,7 +1561,7 @@
     "SignupLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SignupLambdaVersionS2XHAUz9W0T67EqBV8dMDYhp5qenFejrkgI9dA2NQ"
+        "Ref": "SignupLambdaVersionMqmPV3u22dv3Mmfl8Yxif9eBOp1UPHgRkWPXTlceiU"
       },
       "Export": {
         "Name": "sls-apiBooks-dev-SignupLambdaFunctionQualifiedArn"
@@ -1570,7 +1570,7 @@
     "ConfirmsignupLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ConfirmsignupLambdaVersion8ttmwrVuWsjJaFsP4uIfEDC7LHvlxUTRqWbcslElkg"
+        "Ref": "ConfirmsignupLambdaVersionureBB6uP4pNYGEcMI1fWZrlfGw3PQaanfnEacN17HaY"
       },
       "Export": {
         "Name": "sls-apiBooks-dev-ConfirmsignupLambdaFunctionQualifiedArn"

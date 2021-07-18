@@ -5,7 +5,7 @@ def handler(event, context):
     dynamodb = boto3.resource('dynamodb')
     table = dynamodb.Table('BooksTable')
     headers = {
-        "Access-Control-Allow-Credentials": True,
+        "Access-Control-Allow-Credentials": "true",
         "Access-Control-Allow-Origin": "*",
     }
 
@@ -27,7 +27,7 @@ def handler(event, context):
         }
 
     response = {
-        "headers": json.dumps(headers),
+        "headers": headers,
         "statusCode": result['ResponseMetadata']['HTTPStatusCode'],
         "body": json.dumps(body)
     }

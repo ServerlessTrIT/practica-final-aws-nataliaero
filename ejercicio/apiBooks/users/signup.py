@@ -6,7 +6,7 @@ def handler(event, context):
     code = 200
     body = {}
     headers = {
-        "Access-Control-Allow-Credentials": True,
+        "Access-Control-Allow-Credentials": "true",
         "Access-Control-Allow-Origin": "*",
     }
 

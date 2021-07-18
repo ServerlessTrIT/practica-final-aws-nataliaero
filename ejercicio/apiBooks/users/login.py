@@ -6,8 +6,10 @@ def handler(event, context):
     code = 200
     body = {}
     headers = {
-        "Access-Control-Allow-Credentials": True,
+        "Access-Control-Allow-Credentials": "true",
         "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
+        "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
     }
 
     if event['body'] is None:
@@ -38,5 +40,4 @@ def handler(event, context):
         'statusCode': code,
         'headers': headers,
         'body': json.dumps(body)
-
     }

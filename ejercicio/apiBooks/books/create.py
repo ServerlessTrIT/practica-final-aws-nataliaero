@@ -4,7 +4,7 @@ import boto3
 def handler(event, context):
     book = json.loads(event['body'])
     headers = {
-        "Access-Control-Allow-Credentials": True,
+        "Access-Control-Allow-Credentials": "true",
         "Access-Control-Allow-Origin": "*",
     }
     item = {
@@ -23,7 +23,7 @@ def handler(event, context):
     }
 
     response = {
-        "headers": json.dumps(headers),
+        "headers": headers,
         "statusCode": result['ResponseMetadata']['HTTPStatusCode'],
         "body": json.dumps(body)
     }

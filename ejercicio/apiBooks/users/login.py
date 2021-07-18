@@ -5,6 +5,10 @@ import os
 def handler(event, context):
     code = 200
     body = {}
+    headers = {
+        "Access-Control-Allow-Credentials": True,
+        "Access-Control-Allow-Origin": "*",
+    }
 
     if event['body'] is None:
         code = 400
@@ -32,5 +36,7 @@ def handler(event, context):
 
     return {
         'statusCode': code,
+        'headers': headers,
         'body': json.dumps(body)
+
     }

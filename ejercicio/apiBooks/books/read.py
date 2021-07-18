@@ -4,10 +4,6 @@ import boto3
 def handler(event, context):
     dynamodb = boto3.resource('dynamodb')
     table = dynamodb.Table('BooksTable')
-    headers = {
-        "Access-Control-Allow-Credentials": "true",
-        "Access-Control-Allow-Origin": "*",
-    }
 
     if event['pathParameters'] is None:
         result = table.scan()
@@ -27,7 +23,10 @@ def handler(event, context):
         }
 
     response = {
-        "headers": headers,
+        'headers': {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'OPTIONS,GET',
+        },
         "statusCode": result['ResponseMetadata']['HTTPStatusCode'],
         "body": json.dumps(body)
     }

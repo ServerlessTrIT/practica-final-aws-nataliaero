@@ -3,10 +3,6 @@ import boto3
 
 def handler(event, context):
     book = json.loads(event['body'])
-    headers = {
-        "Access-Control-Allow-Credentials": "true",
-        "Access-Control-Allow-Origin": "*",
-    }
     key = {
       "isbn":book['isbn']
     }
@@ -22,7 +18,10 @@ def handler(event, context):
     }
 
     response = {
-        "headers": headers,
+        'headers': {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'OPTIONS,DELETE',
+        },
         "statusCode": result['ResponseMetadata']['HTTPStatusCode'],
         "body": json.dumps(body)
     }

@@ -71,7 +71,6 @@ function login(event) {
   $.ajax({
     url: API_LOGIN,
     method: "POST",
-    dataType: "json",
     headers: {
       "x-api-key": API_KEY,
     },
@@ -81,12 +80,18 @@ function login(event) {
     }),
   })
     .done(function (resp) {
+      console.log("done login: ", resp);
+      $("div[id='msg']").text(`done login: ${resp}`);
       localStorage.setItem("token", resp.token);
       goTo("/");
     })
     .fail(function (error) {
       //$("div[id='msg']").text(JSON.parse(error.responseText).message);
-      $("div[id='msg']").text("Credenciales incorrectas");
+      console.log("error: ", JSON.stringify(error));
+      $("div[id='msg']").text("FAIL LOGIN");
+      $("div[id='msg']").text(
+        `Error de LOGIN. Error: ${JSON.stringify(error)}`
+      );
     });
 
   return false;
